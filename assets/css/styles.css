@@ -787,6 +787,7 @@ the website, in dark theme
   justify-content: center; /* horizontal center */
   align-items: center; /* vertical center */
   width: fit-content; /* Thumbnail dimensions. */  
+  margin-top: 1rem;
 }
 
 .card__thumbnail > img{ 
@@ -1440,6 +1441,10 @@ the website, in dark theme
     background-size: 20px;
     background-size:15px;
   }
+  .grid_vertical > .acara__resepsi, .grid_vertical > .row > .col_countdown{
+    margin-top: 10%;
+  }
+
   .background1_kanan_atas, .background1_kanan_bawah, .background1_kiri_atas, .background1_kiri_bawah,
   .background2_kanan_atas, .background2_kanan_bawah, .background2_kiri_atas, .background2_kiri_bawah{
     width: 60%;
@@ -1523,12 +1528,30 @@ the website, in dark theme
   .acara_container{
     height: 100vh;
   }
+  .grid_vertical > .acara__resepsi, .grid_vertical > .row > .col_countdown{
+    margin-top: 10%;
+  }
+
   .background1_kanan_atas, .background1_kanan_bawah, .background1_kiri_atas, .background1_kiri_bawah,
   .background2_kanan_atas, .background2_kanan_bawah, .background2_kiri_atas, .background2_kiri_bawah{
     width: 70%;
   }
   .row > .grid_vertical > .amplop__detail{
     margin-top: 1rem;
+  }
+  .card_countdown{
+    width: 65px;
+    padding: .9rem;
+    border-radius: .5rem;
+  }
+  .hari,.jam,.menit,.detik{
+    font-size: 2.1rem;
+  }
+  .cd_subtitle{
+    font-size: 1rem;
+  }
+  .col_countdown{
+    column-gap: .7rem;
   }
 }
 
@@ -1608,6 +1631,10 @@ the website, in dark theme
     background-size: 20px;
     background-size:15px;
   }
+  .grid_vertical > .acara__resepsi, .grid_vertical > .row > .col_countdown{
+    margin-top: 10%;
+  }
+
   .card__thumbnail > img{
     width: auto;
     /* transform: scale(1.1); */
@@ -1720,7 +1747,17 @@ the website, in dark theme
     background-size: 30px;
     background-size:20px;
   }
+  .grid_vertical > .acara__resepsi, .grid_vertical > .row > .col_countdown{
+    margin-top: 10%;
+  }
 
+}
+
+@media only screen and (max-width: 360px) and (min-height: 559px)  {
+  .col_countdown{
+    column-gap: 1rem;
+  }
+  
 }
 
 @media screen and (min-width: 767px){
@@ -1935,6 +1972,9 @@ the website, in dark theme
   }
   .amplop_container{
     margin-top: 4rem;
+  }
+  .grid_vertical > .acara__resepsi, .grid_vertical > .row > .col_countdown{
+    margin-top: 0;
   }
 }
 
